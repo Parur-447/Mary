@@ -314,21 +314,13 @@ h6 {
 
 .header__button {
   background: none;
-  border: 1px solid #A49D00;
+  border: 2px solid #A49D00;
   margin: 105px 0 0 0;
   padding: 5px 30px;
 }
 
 .about {
   padding: 110px 0 115px 0;
-}
-
-.container {
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-.about__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,6 +330,21 @@ h6 {
   height: 1px;
   width: 60px;
   background-color: #000000;
+  -webkit-transform: translate(-10px, 170px);
+      -ms-transform: translate(-10px, 170px);
+          transform: translate(-10px, 170px);
+  margin: 0 0 0 7%;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto 0  0;
+}
+
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about__grid {
@@ -348,9 +355,9 @@ h6 {
   -ms-grid-rows: 255px 220px;
   grid-template-rows: 255px 220px;
   row-gap: 18px;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .about__grid :nth-child(1) {
@@ -361,7 +368,7 @@ h6 {
 
 .about__photo {
   position: relative;
-  margin: 0 0 -30px 0;
+  margin: 0 0 -30px 20px;
 }
 
 .about__photo img {
@@ -460,7 +467,7 @@ h6 {
   background: none;
   border: 2px solid #A49D00;
   margin: 50px 0 0 120px;
-  padding: 10px 30px;
+  padding: 10px 32px;
   color: #A49D00;
   font-size: 18px;
   font-family: "OS";
@@ -470,20 +477,19 @@ h6 {
 .portfolio {
   padding: 110px 0 50px 0;
   overflow-x: hidden;
-}
-
-.portfolio__container {
-  max-width: 1280px;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .portfolio__title {
   color: #A49D00;
   font-size: 36px;
   font-family: "plantc";
-  -webkit-transform: translate(80px, 10px);
-      -ms-transform: translate(80px, 10px);
-          transform: translate(80px, 10px);
+  text-transform: uppercase;
+  -webkit-transform: translate(0px, 10px);
+      -ms-transform: translate(0px, 10px);
+          transform: translate(0px, 10px);
 }
 
 .portfolio__line {
@@ -537,22 +543,23 @@ h6 {
           transform: translate(-80px, 0);
 }
 
-.portfolio__row-line1 {
+.portfolio__line1 {
   width: 82px;
   height: 1px;
   background-color: #000000;
-  -webkit-transform: translate(0, 190px);
-      -ms-transform: translate(0, 190px);
-          transform: translate(0, 190px);
+  -webkit-transform: translate(-10px, 190px);
+      -ms-transform: translate(-10px, 190px);
+          transform: translate(-10px, 190px);
+  margin: 0 0 0 auto;
 }
 
-.portfolio__row-line2 {
+.portfolio__line2 {
   width: 165px;
   height: 1px;
   background-color: #000000;
-  -webkit-transform: translate(0, 430px);
-      -ms-transform: translate(0, 430px);
-          transform: translate(0, 430px);
+  -webkit-transform: translate(-60px, 430px);
+      -ms-transform: translate(-60px, 430px);
+          transform: translate(-60px, 430px);
 }
 
 .reviews {
@@ -600,15 +607,23 @@ h6 {
 .reviews-slider__text {
   max-width: 340px;
   line-height: 30px;
-  margin: 0 30px 0 0;
+  margin: 0 40px 0 0;
 }
 
 .reviews-slider__name {
   font-size: 18px;
   font-family: "OS-Sb";
-  -webkit-transform: translate(170px, -50px);
-      -ms-transform: translate(170px, -50px);
-          transform: translate(170px, -50px);
+  -webkit-transform: translate(235px, -50px);
+      -ms-transform: translate(235px, -50px);
+          transform: translate(235px, -50px);
+}
+
+.reviews-slider__name::before {
+  content: "_____";
+  color: #BFBFBF;
+  position: absolute;
+  top: -45%;
+  left: -5%;
 }
 
 .reviews-slider {
@@ -671,7 +686,7 @@ h6 {
 .applications__box {
   position: absolute;
   right: 15%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   display: inline-block;
   padding: 40px 80px 0 60px;
   height: 100%;
@@ -691,6 +706,7 @@ h6 {
   padding: 15px 0 15px 40px;
   opacity: 0.5;
   margin: 0 0 30px 0;
+  width: 350px;
 }
 
 .applications__input::-webkit-input-placeholder {
@@ -726,7 +742,7 @@ h6 {
 
 .applications__line {
   position: absolute;
-  top: 50%;
+  bottom: 40%;
   right: 3.7%;
   width: 150px;
   height: 1px;
