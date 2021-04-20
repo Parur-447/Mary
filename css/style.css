@@ -1683,6 +1683,19 @@ h6 {
     width: 40px;
     margin: 0 0 0 12%;
   }
+
+  .reviews__box {
+    max-width: 340px;
+  }
+
+  .reviews-slider {
+    max-width: 300px;
+  }
+
+  .reviews-slider__text {
+    max-width: 300px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1768,19 +1781,6 @@ h6 {
     grid-template-columns: 160px 160px;
     -ms-grid-rows: 160px 160px;
     grid-template-rows: 160px 160px;
-  }
-
-  .reviews__box {
-    max-width: 340px;
-  }
-
-  .reviews-slider {
-    max-width: 300px;
-  }
-
-  .reviews-slider__text {
-    max-width: 300px;
-    font-size: 14px;
   }
 
   .portfolio-992__title {
